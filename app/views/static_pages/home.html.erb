@@ -1,22 +1,63 @@
-<% if signed_in? %>
+	<% if signed_in? %>
   <div class="row">
     <aside class="span4">
+    
       <section>
         <%= render 'shared/user_info' %>
       </section>
+
+      
       <section>
         <%= render 'shared/stats' %>
       </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
+      
+       <aside class="span1">
+            
+       <section>
+      <%= link_to "Profile2", "/show2", class: "btn btn-small btn" %>
       </section>
+              
+       <section>
+      <%= link_to "Profile3", "/show3", class: "btn btn-small btn" %>
+      </section>
+              
+       <section>
+      <%= link_to "Profile4", "/show4", class: "btn btn-small btn" %>
+      </section>
+              
+       <section>
+      <%= link_to "Profile5", "/show5", class: "btn btn-small btn" %>
+      </section>
+  
+        </aside>
     </aside>
+    
+    
     <div class="span8">
       <h3>Micropost Feed</h3>
        
       <%= render 'shared/feed' %>
+         </div>
+         
+     <div class="span8"> 
+     	 <section>
+      <h3>Compose a new message</h3>
+          
+    
+        <%= render 'shared/micropost_form'%>
+      </section>
+      
+       <section>
+         <div class="progress progress-striped
+active">
+<div class="bar"
+style="width: 40%;"></div>
+</div
+    </section>  
+   </div>
+     </div>
      
-    </div>
+     
   </div>
 <% else %>
   <div class="center hero-unit">

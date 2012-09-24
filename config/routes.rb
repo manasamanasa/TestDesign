@@ -17,6 +17,10 @@ CleanApp::Application.routes.draw do
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+  match '/show2', to: 'static_pages#show2'
+  match '/show3', to: 'static_pages#show3'
+  match '/show4', to: 'static_pages#show4'
+  match '/show5', to: 'static_pages#show5'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
